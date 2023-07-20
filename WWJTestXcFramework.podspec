@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 # 仓库名称
   s.name         = "WWJTestXcFramework"
 # 仓库版本
-  s.version      = "1.0.0"
+  s.version      = "1.0.1"
 # 描述
   s.summary      = "test"
 # 描述
@@ -23,7 +23,8 @@ Pod::Spec.new do |s|
   s.source        = { :git => 'https://github.com/wenjuan5/WWJTestXcFramework.git', :tag => s.version }
 # 封装的framework名称
   s.ios.vendored_frameworks = 'WWJTestXcFramework.xcframework'
-
+  # 添加源文件路径
+  s.source_files = 'WWJTestXcFramework/*.{h,m,swift}'  # 根据你的项目结构进行相应调整
 
 # 工程配置
   s.user_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
