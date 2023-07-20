@@ -1,0 +1,4 @@
+framework module WWJTestXcFramework {
+  header "WWJTestXcFramework-Swift.h"
+  requires objc
+}
