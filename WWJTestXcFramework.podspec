@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
 # 封装的framework名称
   s.ios.vendored_frameworks = 'WWJTestXcFramework.xcframework'
   # 添加源文件路径
-  s.source_files = 'WWJTestXcFramework/Classes/**/*'  # 根据你的项目结构进行相应调整
+  s.source_files = 'WWJTestXcFramework.xcframework/**/*'  # 根据你的项目结构进行相应调整
 
 # 工程配置
   s.user_target_xcconfig = { 'BUILD_LIBRARY_FOR_DISTRIBUTION' => 'YES' }
